@@ -7,7 +7,7 @@
 
 <p>
   <strong>Profile image:</strong>
-  <%= @user.profile_image_id %>
+  <%= image_tag attachment_url(@user, :profile_image, :fill, 300, 300, format: "jpg") %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
